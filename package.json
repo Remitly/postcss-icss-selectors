@@ -67,7 +67,7 @@
     "eslint": "^4.0.0",
     "husky": "^0.13.4",
     "jest": "^20.0.4",
-    "lint-staged": "^3.6.1",
+    "lint-staged": "^10.2.8",
     "prettier": "^1.4.4",
     "strip-indent": "^2.0.0"
   }
