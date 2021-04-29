@@ -1,0 +1,36 @@
+version: 2
+registries:
+  npm-registry-npm-int-remitly-com:
+    type: npm-registry
+    url: https://npm.int.remitly.com
+    token: "${{secrets.NPM_REGISTRY_NPM_INT_REMITLY_COM_TOKEN}}"
+
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "15:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: postcss
+    versions:
+    - 8.2.10
+    - 8.2.12
+    - 8.2.4
+    - 8.2.5
+    - 8.2.6
+    - 8.2.7
+    - 8.2.8
+    - 8.2.9
+  - dependency-name: lint-staged
+    versions:
+    - 10.5.3
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
+  - dependency-name: handlebars
+    versions:
+    - 4.7.6
+  registries:
+  - npm-registry-npm-int-remitly-com
